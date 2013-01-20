@@ -1,0 +1,101 @@
+
+#main {
+  width: 320px;
+}
+
+
+#logo {
+  position: relative;
+}
+
+
+#con_post {
+  display:none;
+}
+#con_follow {
+  display:none;
+}
+
+
+
+
+#lifestream_images {
+  width: 100%;
+}
+
+#lifestream_images li {
+  display: block;
+  margin:  8px auto;
+  text-align: center;
+}
+
+#lifestream_images li img {
+  width:  200px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+#lifestream_image {
+  display:none;
+}
+
+
+#lifestream_register {
+  display:none;
+}
+
+#lifestream_complete {
+  display:none;
+}
+
+
+
+#post_pic {
+  display: block;
+  margin: 0px auto;
+  width:  200px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+#post_msg {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+#follow_followee {
+  display:none;
+  height: 40px;
+}
+
+
+a.signin {
+  margin: 8px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  width: 300px;
+  margin: 8px auto;
+}
+
+li p.username {
+  margin: 6px;
+  width: 160px;
+  float: left;
+}
+
+li a.follow {
+  width: 100px;
+  float: right;
+}
+

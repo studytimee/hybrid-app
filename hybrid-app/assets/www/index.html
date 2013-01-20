@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+  <title>PicSync</title> 
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+
+  <link rel="apple-touch-icon" href="lifestream-icon.png"/>
+  <link rel="apple-touch-icon-precomposed" href="lifestream-icon.png"/>
+  <link rel="apple-touch-startup-image" href="lifestream-startup.png" />
+
+  <link rel="stylesheet" href="jquery.mobile-1.0.css" />
+  <link rel="stylesheet" href="lifestream.css" />
+
+  <script src="phonegap-1.0.0.js"></script>
+  <script src="jquery.js"></script>
+  <script src="jquery.mobile-1.0.js"></script>
+  <script src="lifestream.js"></script>
+</head> 
+<body> 
+<div id="main" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+	<li><a id="nav_lifestream"><img id="logo" src="lifestream.png">&nbsp;</a></li>
+	<li><a id="nav_post">Post</a></li>
+	<li><a id="nav_follow">Follow</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="con_lifestream" data-role="content">	
+    <div id="lifestream_register">
+      <h2>Registration</h2>
+
+      <a target="_blank" id="lifestream_twitter" class="signin">
+        <img src="twitter.png">
+      </a>
+
+      <a target="_blank" rel="external" id="lifestream_facebook" class="signin">
+        <img src="facebook.png">
+      </a>
+      
+      <label>Or Create a New Username:</label><br/>
+      <input id="lifestream_username"><br/>
+      <a id="btn_register" data-role="button">Register</a>
+    </div>
+
+    <div id="lifestream_complete">
+      <a id="btn_complete" data-role="button">Complete Registration</a>
+    </div>
+
+    <ul id="lifestream_images">
+    </ul>
+    <li id="lifestream_image">
+      <span></span><br/>
+      <img/>
+    </li>
+
+  </div>
+
+  <div id="con_post" data-role="content">	
+    <a id="btn_takepic" data-role="button">Take Picture</a>
+    <img id="post_pic" />
+    <a id="btn_upload" data-role="button">Upload Picture</a>
+    <p id="post_msg"></p>
+  </div>
+
+  <div id="con_follow" data-role="content">	
+    <h3 id="follow_user"></h3>
+
+    <h2>Followers</h2>
+    <ul id="follow_followers">
+    </ul>
+
+    <h2>Following</h2>
+
+    <div data-role="collapsible" data-collapsed="true">
+    <h3>Search:</h3>
+    <input id="follow_search"><br/>
+    <a id="btn_search" data-role="button">Search</a><br/>
+    <ul id="follow_results">
+    </ul>
+    </div>
+
+    <ul id="follow_following">
+    </ul>
+    <li id="follow_followee">
+      <p class="username">username</p>
+      <a class="follow" data-role="button"></a>
+    </li>
+    
+
+  </div>
+
+</div>
+</body>
+</html>

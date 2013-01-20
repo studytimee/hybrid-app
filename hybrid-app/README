@@ -1,0 +1,11 @@
+************ PICSYNC ****************
+
+This is a cloud-based photo blogging mobile app to let users stream and store photos in the cloud (using Amazon S3 buckets). I have currently developed a native client-side Android app using PhoneGap, using which the users can take pictures using their device camera and sync it with the cloud. Obviously, all these pics are going to be stored in my S3 bucket :).
+
+Developed using : HTML5, JS, JSON, jQuery, EC2, S3, Node.js, MongoDB hosted on MongoHQ and PhoneGap.
+
+Currently working on : 
+Enabling user following feature like Twitter to let users follow and see each others’ photos. 
+
+To-Do : 
+Enable social network identity authentication features using Twitter and Facebook API's. I only have placeholders on the homepage of the app. It is not working currently.
